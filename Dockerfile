@@ -13,4 +13,5 @@ RUN apt-get update && \
     apt-get update && \
     apt-get install -y kubelet kubeadm kubectl && \
     apt-get autoremove -y && \
-    apt-get clean
+    apt-get clean &&
+    chmod a+x /root/update-secret.sh
